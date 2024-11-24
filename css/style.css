@@ -1,0 +1,113 @@
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-serif-bold {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-serif-regular-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-serif-bold-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+body {
+  background-color: #EFEEE5;
+  /*background-image: url("../images/background_maybe_shitty_green.png"); Something like this would be cool in the future. maybe with animation and pure css?*/
+  background-attachment:fixed;
+  background-position:center bottom;
+  background-repeat: no-repeat;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: "PT Serif", serif; /* TODO: set actual font, look at webfonts */
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 350%;
+}
+
+.home {
+  color: #507d2a; /* TODO: set actual colors*/
+  /*text-indent: 30%;*/
+  text-align: center;
+}
+
+h1.home {
+  margin-bottom: 0%;
+}
+
+h2.home {
+  font-size: 100%;
+}
+
+a:link {
+  color: green;
+}
+
+/*
+hr {
+  width: 95%;
+}
+*/
+
+img {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 100%
+}
+
+.flex-container {
+  display: flex;
+  /*background-color: pink;*/
+  /*border: 5px solid red;*/
+  align-items: stretch;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.flex-container > div {
+  margin: 10px;
+  text-align: left;
+}
+
+.flex-head {
+  flex-basis: 30%;
+  font-size: 150%;
+}
+
+.flex-body {
+  flex-basis: 70%;
+  line-height: 140%;
+  font-size: 14pt;
+}
