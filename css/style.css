@@ -36,6 +36,35 @@
 header {
   position: sticky;
   top: 0;
+  background-color: #EFEEE5;
+}
+
+/* TODO: personalise topnav */
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topnav a:link {
+  color: black;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
 body {
