@@ -4,3 +4,4 @@
 * variables in css?
 * move menu to one html file?
 * make footer
+* chop up css to multiple files
