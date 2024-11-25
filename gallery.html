@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SeedCity</title>
+    <link href="../css/style.css" rel="stylesheet">
     <link href="../css/gallery.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./images/seedcity_icon.png">
+    <link rel="icon" type="image/x-icon" href="./images/home/seedcity_icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <!--pure js-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script>
+    $(function(){
+      $("#header").load("../navbar.html"); 
+    });
+    </script>
+
+    <!--import images-->
     <script>
     let count = 0;
     let num_cols = 3;
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "./gallery_images/", true);
+    xhr.open("GET", "./images/gallery_images/", true);
     xhr.responseType = 'document';
     xhr.onload = () => {
       if (xhr.status === 200) {
@@ -25,6 +38,7 @@
           if ( x.href.match(/\.(jpe?g|png|gif)$/) ) { 
               let img = document.createElement("img");
               img.src = x.href;
+              //img.click(function(){this.requestFullscreen()});
               document.getElementById("row"+count%num_cols).appendChild(img);
               count++; 
           } 
@@ -36,43 +50,29 @@
     }
     xhr.send()
     </script>
+    <script>
+    $(document).ready(function(){
+      $("img").click(function(){this.requestFullscreen()})
+    });
+    </script>
+
+
   </head>
 
   <body>
-    <H1 class="home">Gallery</H1>
+    <header>
+      <H1 class="home">Gallery</H1>
+      
+      <hr />
+      <div id="header"></div>
+      <hr />
+    </header>
 
     <div id="gallery" class="row">
       <div id="row0" class="column"></div>
       <div id="row1" class="column"></div>
       <div id="row2" class="column"></div>
     </div>
-
-    <!--
-    <H1 class="home">Second try</H1>
-    <div id="gallery" class="row">
-      <div class="column">
-        <img src="../images/pumpkin.jpg">
-        <img src="../images/pumpkin.jpg">
-        <img src="../images/pumpkin.jpg">
-        <img src="../images/pumpkin.jpg">
-      </div>
-      <div class="column">
-        <img src="../images/pumpkin.jpg">
-        <img src="../images/pumpkin.jpg">
-        <img src="../images/pumpkin.jpg">
-      </div>
-      <div class="column">
-        <img src="../images/pumpkin.jpg">
-        <img src="../images/pumpkin.jpg">
-        <img src="../images/pumpkin.jpg">
-      </div>
-      <div class="column">
-        <img src="../images/pumpkin.jpg">
-        <img src="../images/pumpkin.jpg">
-        <img src="../images/pumpkin.jpg">
-      </div>
-    </div>
-    -->
 
   </body>
 </html>

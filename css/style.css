@@ -39,37 +39,9 @@ header {
   background-color: #EFEEE5;
 }
 
-/* TODO: personalise topnav */
-.topnav {
-  overflow: hidden;
-}
-
-.topnav a {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.topnav a:link {
-  color: black;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
 body {
   background-color: #EFEEE5;
-  /*background-image: url("../images/background_maybe_shitty_green.png"); Something like this would be cool in the future. maybe with animation and pure css?*/
+  //background-image: url("../images/background_maybe_shitty_green.png"); Something like this would be cool in the future. maybe with animation and pure css?
   background-attachment:fixed;
   background-position:center bottom;
   background-repeat: no-repeat;
@@ -78,7 +50,7 @@ body {
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
-  font-family: "PT Serif", serif; /* TODO: set actual font, look at webfonts */
+  font-family: "PT Serif", serif; // TODO: set actual font, look at webfonts
   font-weight: 400;
 }
 
@@ -87,25 +59,31 @@ h1 {
 }
 
 .home {
-  color: #507d2a; /* TODO: set actual colors*/
-  /*text-indent: 30%;*/
-  text-align: center;
+  color: #507d2a; // TODO: set actual colors
+  //text-indent: 30%;
 }
 
 h1.home {
   margin-bottom: 0%;
+  text-align: center;
 }
 
-h2.home {
+h6.home {
+  margin-top: 0%;
   font-size: 100%;
+  text-align: center;
 }
 
 a:link {
-  color: green; /*TODO: fix this color*/
+  color: #507d2a; //TODO: fix color
 }
 
 p {
   font-size: 14pt;
+}
+
+button {
+  background-color: #EFEEE5;
 }
 
 /*
@@ -117,13 +95,13 @@ hr {
 img {
   padding-top: 5%;
   padding-bottom: 5%;
-  width: 100%
+  width: 100%;
 }
 
 .flex-container {
   display: flex;
-  /*background-color: pink;*/
-  /*border: 5px solid red;*/
+  //background-color: pink;
+  //border: 5px solid red;
   align-items: stretch;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -143,50 +121,4 @@ img {
   flex-basis: 70%;
   line-height: 140%;
   font-size: 14pt;
-}
-
-/*---------------------------------Gallery--------------------------*/
-
-* {
-  box-sizing: border-box;
-}
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
 }
