@@ -66,6 +66,10 @@ h1 {
   font-size: 350%;
 }
 
+p.contact {
+  line-height: 300%;
+}
+
 .home {
   color: #507d2a; // TODO: set actual colors
   //text-indent: 30%;
