@@ -25,31 +25,52 @@
 
     <!--import images-->
     <script>
-    let count = 0;
-    let num_cols = 3;
+    function loadImages() {
+      let count = 0;
+      let num_cols = 3;
+      const xhttp = new XMLHttpRequest();
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "./images/gallery_images/", true);
-    xhr.responseType = 'document';
-    xhr.onload = () => {
-      if (xhr.status === 200) {
-        var elements = xhr.response.getElementsByTagName("a");
-        for (x of elements) {
-          if ( x.href.match(/\.(jpe?g|png|gif)$/) ) { 
-              let img = document.createElement("img");
-              img.src = x.href;
-              //img.click(function(){this.requestFullscreen()});
-              document.getElementById("row"+count%num_cols).appendChild(img);
-              count++; 
-          } 
-        };
-      } 
-      else {
-        alert('Request failed. Returned status of ' + xhr.status);
-      }
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          const fileList = this.responseText.split('\n'); // Split by lines
+          let currentFolder = '';
+          
+          // preprocess image paths
+          const filePaths = fileList
+            .map(f => { // Build correct path for each file
+              let filePath = '';
+              
+              if (f) {
+                if (f[0] === '.') {
+                  currentFolder = f.replace('.', '').replace(':', '/');
+                }
+                else if (f[f.length - 1] !== '/') {
+                  filePath = `${currentFolder}${f}`;
+                }
+              }
+              return filePath;
+            })
+            .filter(f => f); // Remove empty lines
+          
+          // put images in the DOM
+          filePaths.map(f => {
+            const img = document.createElement('IMG');
+            img.src = f;
+            
+            document.getElementById("row"+count%num_cols).appendChild(img);
+            count++;
+          });
+        }
+      };
+
+      xhttp.open("GET", "images.txt", true);
+      xhttp.send();
     }
-    xhr.send()
+
+    loadImages();
     </script>
+
+    <!--TODO: fullscren images-->
     <script>
     $(document).ready(function(){
       $("img").click(function(){this.requestFullscreen()})
@@ -67,7 +88,7 @@
       <div id="header"></div>
       <hr />
     </header>
-
+    <div class="images" id="images"></div>
     <div id="gallery" class="row">
       <div id="row0" class="column"></div>
       <div id="row1" class="column"></div>
