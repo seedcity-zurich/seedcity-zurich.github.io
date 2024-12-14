@@ -1,17 +1,16 @@
 name: Update Image List
-on:
-  push
+run-name: ${{ github.actor }}'s caused updating image list
+on: [push]
 jobs:
-  updateImageList: # you can put any name here
+  Update-Image-List:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2 # Checkout repo
-      - shell: bash
-        run: ls -Rpm1 ./images/gallery_images/ > images.txt # Saving file list into a file
-      - name: Save changes
-        uses: actions-go/push@v1 # pushing the changes to the repo
+      - name: write files in directory to .txt file
+        uses: actions/checkout@v2
+      - run: ls -Rpm1 ./images/gallery_images/ > images.txt # Saving file list into a file
+      - name: save changes
+        uses: actions-go/push@v1
         with:
           force: true
           commit-files: images.txt
           commit-message: Updating image list
-
