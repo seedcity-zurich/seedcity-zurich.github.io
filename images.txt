@@ -1,0 +1,9 @@
+./images/gallery_images/:
+blossom.jpeg
+crop.jpg
+hengehonge.jpeg
+lake.jpg
+lilly.jpg
+mouse.jpg
+pumpkin.jpg
+zucchini.jpg
