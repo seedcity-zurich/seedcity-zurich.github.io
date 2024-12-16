@@ -1,12 +1,8 @@
 * flexbox: switch 'align-item' when window too small
 * check mobile rendering: responsive web design
     * fix sidepadding once certain window size reached
-* make footer
 * chop up css to multiple files
-* fix header: Get involved different fontsize: rewrite the whole thing to a javascript function?
-* gallery: make images fullscreenable
 * make folder of scripts:
-    * header/menu
     * css loader
 * iframe containing map in front of dropdown-menu
 * write documentation
