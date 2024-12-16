@@ -7,7 +7,7 @@
 * gallery: make images fullscreenable
 * make folder of scripts:
     * header/menu
-    * gallery loader
+    * css loader
 * iframe containing map in front of dropdown-menu
 * write documentation
     * github actions to generate image list
@@ -16,7 +16,9 @@
 * github-actions: fix name of what is going on
 * footer:
     * POS footer won't stay at the bottom
-    * fix footer size with responsive design
+    * fix footer image size with responsive design
+* gallery:
+    * fix css for columns so that you can change how many cols there are in the script
 
 * write frieder about domain
 * group foto?
