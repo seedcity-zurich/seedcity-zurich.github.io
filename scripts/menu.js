@@ -34,7 +34,7 @@ function createMenu() {
     const events = createLink("Events", "../events.html");
     topnav.appendChild(events);
 
-    //TODO
+    // Dropdown menu
     const getInvolvedDropdown = document.createElement("div");
     getInvolvedDropdown.classList.add("dropdown");
     topnav.appendChild(getInvolvedDropdown);
