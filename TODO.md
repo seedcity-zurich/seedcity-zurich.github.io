@@ -14,7 +14,9 @@
     * how to use wiki
     * tie in wiki on website
 * github-actions: fix name of what is going on
-* POS footer won't stay at the bottom
+* footer:
+    * POS footer won't stay at the bottom
+    * fix footer size with responsive design
 
 * write frieder about domain
 * group foto?
