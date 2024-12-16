@@ -55,6 +55,7 @@
           filePaths.map(f => {
             const img = document.createElement('IMG');
             img.src = f;
+            img.onclick = function() {this.requestFullscreen()};
             
             document.getElementById("row"+count%num_cols).appendChild(img);
             count++;
