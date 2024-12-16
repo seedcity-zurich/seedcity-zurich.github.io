@@ -13,7 +13,7 @@ function footer() {
     VSETHLogo.style.width = "10%";
     VSETHLogo.onclick = function() {window.open("https://vseth.ethz.ch/en/")};
 
-    footer.classList.add("footer");
+    //footer.classList.add("footer");
     footer.appendChild(VSETHLogo);
 
     document.body.appendChild(footer);
