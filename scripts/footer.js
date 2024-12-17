@@ -7,7 +7,7 @@ function loadCss() {
 }
 
 function footer() {
-    const footer = document.createElement("div");
+    const footer = document.getElementById("footer");
     const VSETHLogo = document.createElement("img");
     VSETHLogo.src = "../images/footer_images/vseth_Logo_bunt-1024x559.png"
     VSETHLogo.style.width = "10%";
@@ -15,8 +15,6 @@ function footer() {
 
     //footer.classList.add("footer");
     footer.appendChild(VSETHLogo);
-
-    document.body.appendChild(footer);
 }
 
 loadCss();
