@@ -1,5 +1,5 @@
 name: Update Image List
-run-name: ${{ github.actor }}'s caused updating image list
+run-name: Updating image list because ${{ github.actor }} made a new commit
 on: [push]
 jobs:
   Update-Image-List:
