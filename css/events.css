@@ -1,0 +1,37 @@
+.event-date {
+    font-size: 14pt;
+    font-weight: bold;
+    background-color: #4E6039;
+    padding: 10px 10px 15px 10px;
+    border-radius: 10px;
+}
+
+.event-date > H1, H2 {
+    color: white;
+}
+
+.event-date > H1 {
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-thickness: 2px;
+}
+
+.event-date > H2 {
+    font-size: 14pt;
+    text-align: left;
+}
+
+.event-date > H3 {
+    font-size: 14pt;
+    text-align: center;
+    padding-top: 0;
+}
+
+.event-info > H2 {
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: left;
+    text-decoration-thickness: 2px;
+    color: black;
+}

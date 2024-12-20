@@ -1,3 +1,4 @@
+/* font stuff */
 .pt-serif-regular {
   font-family: "PT Serif", serif;
   font-weight: 400;
@@ -21,19 +22,9 @@
   font-weight: 700;
   font-style: italic;
 }
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 800
+/* end of font stuff*/
 
-.open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-
+/* general css */
 * {
   box-sizing: border-box;
 }
@@ -54,7 +45,6 @@ header {
 
 body {
   background-color: #EFEEE5;
-  //background-image: url("../images/background_maybe_shitty_green.png"); Something like this would be cool in the future. maybe with animation and pure css?
   background-attachment:fixed;
   background-position:center bottom;
   background-repeat: no-repeat;
@@ -63,7 +53,7 @@ body {
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
-  font-family: "PT Serif", serif; // TODO: set actual font, look at webfonts
+  font-family: "PT Serif", serif;
   font-weight: 400;
 }
 
@@ -74,10 +64,11 @@ h1 {
 p.contact {
   line-height: 300%;
 }
+/* end of general css*/
+
 
 .home {
-  color: #507d2a; // TODO: set actual colors
-  //text-indent: 30%;
+  color: #507d2a;
 }
 
 h1.home {
@@ -92,7 +83,7 @@ h6.home {
 }
 
 a:link {
-  color: #507d2a; //TODO: fix color
+  color: #507d2a;
 }
 
 p {
@@ -103,22 +94,15 @@ button {
   background-color: #EFEEE5;
 }
 
-/*
-hr {
-  width: 95%;
-}
-*/
-
 img {
   padding-top: 5%;
   padding-bottom: 5%;
   width: 100%;
 }
 
+/* flex container in pages stuff*/
 .flex-container {
   display: flex;
-  //background-color: pink;
-  //border: 5px solid red;
   align-items: stretch;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -147,6 +131,15 @@ img {
   padding-top: 66.66%; /* 3:2 Aspect Ratio */
 }
 
+.flex-event-date {
+  min-width: 170px;
+}
+
+.flex-event-info {
+  flex-basis: 60%;
+}
+/* end of flex container in pages stuff*/
+
 .responsive-iframe {
   position: absolute;
   top: 0;
@@ -158,6 +151,7 @@ img {
   border: none;
 }
 
+/* footer stuff */
 /* get the footer to stay at the bottom of the page: https://matthewjamestaylor.com/bottom-footer */
 #flex-body {
   display:flex;
@@ -172,3 +166,4 @@ img {
 #flex-body > footer {
   margin-top:auto;
 }
+/* end of footer stuff */
