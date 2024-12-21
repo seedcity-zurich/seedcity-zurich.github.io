@@ -1,6 +1,7 @@
 * flexbox: switch 'align-item' when window too small
 * check mobile rendering: responsive web design
     * fix sidepadding once certain window size reached
+    * make sure padding on event date-boxes isnt huge
 * chop up css to multiple files
     * think some of the flex stuff is redundant/wrong
 * make folder of scripts:

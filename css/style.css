@@ -104,6 +104,7 @@ img {
 .flex-container {
   display: flex;
   align-items: stretch;
+  /*align-items: center;*/
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -132,6 +133,8 @@ img {
 }
 
 .flex-event-date {
+  padding-top: 80px; /* hacky way of aligning the date with the text of the event*/
+  padding-right: 10px;
   min-width: 170px;
 }
 
