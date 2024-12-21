@@ -4,11 +4,7 @@
     background-color: #4E6039;
     padding: 10px 10px 15px 10px;
     border-radius: 10px;
-    box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
-}
-
-.event-date > H1, H2 {
-    color: white;
+    box-shadow: 6px 6px 3ypx rgba(0, 0, 0, 0.5); /* Adjust values as needed */
 }
 
 .event-date > H1 {
@@ -16,11 +12,13 @@
     font-weight: bold;
     text-align: center;
     text-decoration-thickness: 2px;
+    color: white;
 }
 
 .event-date > H2 {
     font-size: 14pt;
     text-align: left;
+    color: white;
 }
 
 .event-date > H3 {

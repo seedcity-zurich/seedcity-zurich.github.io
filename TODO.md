@@ -24,3 +24,4 @@ events (overhaul css):
 * section of how to become official member:
     * rewrite section, 
 * Layout plan: gimp or krita (or pinta or inkscape) or so project plus rendered file of project
+* get involved section on contributing to the website.

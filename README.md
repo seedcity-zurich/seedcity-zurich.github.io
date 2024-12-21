@@ -34,9 +34,9 @@ We are an open community, consisting of both ETH students, as well as people fro
 Feel free to add to the website by making a [pull request](https://github.blog/developer-skills/github/beginners-guide-to-github-creating-a-pull-request/) or [opening an issue](https://www.geeksforgeeks.org/issues-in-github/). The following sections should explain how to go about updating specific sections.
 ### Events
 #### Removing an old event
-This is straingforward: in the file `events.html` remove the event and make a pull request. (Alternatively open an issue and tell us to remove it.)
+This is straingforward: in the file `events.html` remove the event and make a pull request. (Alternatively open an issue and tell us to remove it.) If you remove the last event, please uncomment the "No Events planned" section.
 #### Adding a new event
-You can easily add a new event by modifying the `events.html` file. Events should be ordered by how soon they are going to take place in descending order, i.e. an event that will take place in 2 weeks should be __above__ an event that will take place in 6 months. If no other events are currently in the file, please add your event __after__ the heading.
+You can easily add a new event by modifying the `events.html` file. Events should be ordered by how soon they are going to take place in descending order, i.e. an event that will take place in 2 weeks should be __above__ an event that will take place in 6 months. If no other events are currently in the file, please add your event __after__ the heading and comment out the "No Events planned" section.
 
 Below you will find an example event. You can copy-paste this event and modify it as you need for the event you want to add.
 
@@ -64,7 +64,7 @@ Once you have added your event, save your version of `events.html` and make a pu
 ### Images for the Gallery
 Simply add any images you want to add to the website to the folder `images/gallery_images`. The website is set up so that these images will automatically be added to the gallery. Once you added the images, just make a pull request.
 ### Requested features
-If you want specific things added/removed from the website, please open an issue or send us an [email](seedcity@ethz.ch). While you can also implement specific features yourself and open a pull request, there is no guarantee that we will accept this pull request. So, as to not waste your time, you probably want to contact us beforehand. 
+If you want specific things added/removed from the website, please open an issue or send us an [email](seedcity@ethz.ch). While you can also implement specific features yourself and open a pull request, there is no guarantee that we will accept this pull request. So, as to not waste your time, you probably want to contact us beforehand. Overall, the code in this repository should stay as simple as possible so as to make it easy to maintain and to add to for nonprogrammers.
 ### Further questions
 If you still have questions or need a hand contributing to the website, open up an issue or send us an email [email](seedcity@ethz.ch). Don't be shy :)
 
