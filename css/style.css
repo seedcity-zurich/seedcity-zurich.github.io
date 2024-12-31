@@ -38,9 +38,14 @@ ol {
 }
 
 header {
-  position: sticky;
   top: 0;
   background-color: #EFEEE5;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    position: sticky;
+  }
 }
 
 body {
@@ -48,8 +53,15 @@ body {
   background-attachment:fixed;
   background-position:center bottom;
   background-repeat: no-repeat;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -102,13 +114,18 @@ img {
 
 /* flex container in pages stuff*/
 .flex-container {
-  display: flex;
+  display: block;
   align-items: stretch;
   /*align-items: center;*/
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
+@media only screen and (min-width: 600px) {
+  .flex-container {
+    display: flex;
+  }
+}
 .flex-container > div {
   margin: 10px;
   text-align: left;
