@@ -1,21 +1,19 @@
-* flexbox: switch 'align-item' when window too small
-* check mobile rendering: responsive web design
+* responsive web design
     * make sure padding on event date-boxes isnt huge
-    * FIX: images in "our garde" mixed up on mobile view 
+    * FIX: images in "our garde" mixed up on mobile view (https://www.freecodecamp.org/news/learn-flexbox-build-5-layouts/)
 * chop up css to multiple files
     * think some of the flex stuff is redundant/wrong
 * make folder of scripts:
     * css loader
-* iframe containing map in front of dropdown-menu
+* iframe containing map in front of dropdown-menu (not relevant ATM)
 * write documentation
     * github actions to generate image list
     * how to use wiki
     * tie in wiki on website
-* fix whitespaces at end of headers
 * footer:
-    * fix footer image size with responsive design
+    * FIX: fix footer image size with responsive design
 * gallery:
-    * fix css for columns so that you can change how many cols there are in the script
+    * FIX: fix css for columns so that you can change how many cols there are in the script
 * write frieder about domain
 * group foto?
 * QR-code for twint
