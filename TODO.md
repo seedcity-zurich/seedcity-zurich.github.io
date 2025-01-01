@@ -1,6 +1,6 @@
+* switch from css to scss? so we can use variables and whatnot? also allows for imports
 * responsive web design
     * make sure padding on event date-boxes isnt huge
-    * FIX: images in "our garde" mixed up on mobile view (https://www.freecodecamp.org/news/learn-flexbox-build-5-layouts/)
 * chop up css to multiple files
     * think some of the flex stuff is redundant/wrong
 * make folder of scripts:
