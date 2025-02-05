@@ -64,9 +64,9 @@ Once you have added your event, save your version of `events.html` and make a pu
 ### Images for the Gallery
 Simply add any images you want to add to the website to the folder `images/gallery_images`. The website is set up so that these images will automatically be added to the gallery. Once you added the images, just make a pull request.
 ### Requested features
-If you want specific things added/removed from the website, please open an issue or send us an [email](seedcity@ethz.ch). While you can also implement specific features yourself and open a pull request, there is no guarantee that we will accept this pull request. So, as to not waste your time, you probably want to contact us beforehand. Overall, the code in this repository should stay as simple as possible so as to make it easy to maintain and to add to for nonprogrammers.
+If you want specific things added/removed from the website, please open an issue or send us an <a href="mailto:seedcity@ethz.ch">email</a>. While you can also implement specific features yourself and open a pull request, there is no guarantee that we will accept this pull request. So, as to not waste your time, you probably want to contact us beforehand. Overall, the code in this repository should stay as simple as possible so as to make it easy to maintain and to add to for nonprogrammers.
 ### Further questions
-If you still have questions or need a hand contributing to the website, open up an issue or send us an email [email](seedcity@ethz.ch). Don't be shy :)
+If you still have questions or need a hand contributing to the website, open up an issue or send us an <a href="mailto:seedcity@ethz.ch">email</a>. Don't be shy :)
 
 # Thanks
 Thanks to the whole board of SeedCity and everyone involved for making SeedCity the wonderful place it is. Also thanks to GitHub for hosting our website.
