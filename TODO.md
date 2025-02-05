@@ -1,8 +1,9 @@
-* switch from css to scss? so we can use variables and whatnot? also allows for imports
 * responsive web design
     * make sure padding on event date-boxes isnt huge
-* chop up css to multiple files
-    * think some of the flex stuff is redundant/wrong
+* css:
+    * switch from css to scss? so we can use variables and whatnot? also allows for imports
+    * chop up css to multiple files
+        * think some of the flex stuff is redundant/wrong
 * make folder of scripts:
     * css loader
 * iframe containing map in front of dropdown-menu (not relevant ATM)

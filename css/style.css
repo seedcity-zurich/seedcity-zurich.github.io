@@ -24,6 +24,29 @@
 }
 /* end of font stuff*/
 
+/* variables */
+:root {
+  /* colors */
+  /*
+  --background-color: #EFEEE5;
+  --header: #507d2a;
+  */
+  /* test colors palette: https://creativebooster.net/blogs/colors/green-color-palettes */
+  /* second test color palette*/ 
+  --brunswick-green: #344E41;
+  --hunter-green: #3A5A40;
+  --fern-green: #588157;
+  --sage: #A3B18A;
+  --sage-light: #A3B18A75;
+  --timberwolf: #DAD7CD;
+  --dropdown-background-color: #EFEEE5;
+
+  --header: var(--hunter-green);
+  --subheader: var(--hunter-green);
+  --background-color: var(--timberwolf);
+}
+/* end of variables */
+
 /* general css */
 * {
   box-sizing: border-box;
@@ -31,15 +54,20 @@
 
 p {
   font-size: 14pt;
+  color: var(--fern-green);
 }
 
 ol {
   font-size: 14pt;
 }
 
+hr {
+  color: var(--brunswick-green);
+}
+
 header {
   top: 0;
-  background-color: #EFEEE5;
+  background-color: var(--background-color);
 }
 
 @media screen and (min-width: 600px) {
@@ -49,7 +77,7 @@ header {
 }
 
 body {
-  background-color: #EFEEE5;
+  background-color: var(--background-color);
   background-attachment:fixed;
   background-position:center bottom;
   background-repeat: no-repeat;
@@ -67,6 +95,7 @@ body {
 :is(h1, h2, h3, h4, h5, h6) {
   font-family: "PT Serif", serif;
   font-weight: 400;
+  color: var(--brunswick-green);  
 }
 
 h1 {
@@ -80,7 +109,7 @@ p.contact {
 
 
 .home {
-  color: #507d2a;
+  color: var(--header);
 }
 
 h1.home {
@@ -92,10 +121,11 @@ h6.home {
   margin-top: 0%;
   font-size: 100%;
   text-align: center;
+  color: var(--subheader);
 }
 
 a:link {
-  color: #507d2a;
+  color: var(--header);
 }
 
 p {
@@ -103,7 +133,7 @@ p {
 }
 
 button {
-  background-color: #EFEEE5;
+  background-color: var(--background-color);
 }
 
 img {
