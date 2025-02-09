@@ -20,8 +20,10 @@
 
 .topnav a:hover {
   background-color: var(--hover-color);
+  position: relative;
   color: var(--text-color);
   box-shadow: 0px 4px 16px 0px var(--box-shadow-color);
+  z-index: 2;
 }
 
 /*Dropdown on hover*/
@@ -74,6 +76,7 @@
 .dropdown:hover .dropbtn {
   box-shadow: 0px 4px 16px 0px var(--box-shadow-color);
   background-color: var(--dropdown-background-color);
+  z-index: 2;
 }
 
 .dropdown:hover .dropbtn:hover {
