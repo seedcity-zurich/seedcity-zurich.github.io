@@ -6,10 +6,13 @@
         * think some of the flex stuff is redundant/wrong
 * make folder of scripts:
     * css loader
+    * fix z-index of dropshadow of menu boxes. conflicts with dropdown button
+    * font size of p seems big
+    * add css-home for sorted list (see "become a member")
 * iframe containing map in front of dropdown-menu (not relevant ATM)
 * write documentation
     * github actions to generate image list
-    * how to use wiki
+    * how to use wiki (how to add to wiki)
     * tie in wiki on website
 * footer:
     * FIX: fix footer image size with responsive design

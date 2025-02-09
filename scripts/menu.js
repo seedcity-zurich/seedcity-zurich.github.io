@@ -28,6 +28,9 @@ function createMenu() {
     const garden = createLink("Our Garden", "../our_garden.html");
     topnav.appendChild(garden);
 
+    const resources = createLink("Resources", "../resources.html");
+    topnav.appendChild(resources);
+
     const gallery = createLink("Gallery", "../gallery.html");
     topnav.appendChild(gallery);
 

@@ -142,6 +142,17 @@ img {
   width: 100%;
 }
 
+/* garden layout */
+.layout {
+  text-align: center;
+}
+
+img.layout {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%
+}
+
 .hidden-image {
   display: none;
 }  
