@@ -161,6 +161,13 @@ img.layout {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+ul.qr-code {
+  color: var(--brunswick-green);
+  list-style-type: none;
+  padding: 0;
 }
 
 .hidden-image {
