@@ -153,6 +153,16 @@ img.layout {
   width: 100%
 }
 
+.qr-code {
+  max-width: 600px; /* Adjust the value as needed */
+  max-height: 600px; /* Adjust the value as needed */
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hidden-image {
   display: none;
 }  
