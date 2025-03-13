@@ -34,3 +34,9 @@
     text-decoration-thickness: 2px;
     /*color: black;*/
 }
+
+img.event-info {
+    padding: 0%;
+    border-radius: 10px;
+    box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+}
